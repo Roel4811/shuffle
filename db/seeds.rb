@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+Guest.destroy_all
+Guest.create(name: "Felix de Rijk", age: 24, location: "Breda")
+Guest.create(name: "Random chick", age: 28, location: "Amsterdam")

@@ -1,0 +1,7 @@
+<h1> All our Guests </h1>
+
+<% @guests.each do |guest| %>
+  <h2><%= link_to guest.name, guest_path(guest) %></h2>
+  <p><%= guest.age %></p>
+  <p><%= guest.location %></p>
+<% end %>
