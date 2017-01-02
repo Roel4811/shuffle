@@ -1,0 +1,27 @@
+<%= form_for @guest do |f| %>
+  <%= f.label :name, "your name" %>
+  <%= f.text_field :name %>
+
+  <%= f.label :age, "your age" %>
+  <%= f.text_field :age %>
+
+  <%= f.label :location, "your location" %>
+  <%= f.text_field :location %>
+
+  <%= f.submit %>
+
+<% end %>
+
+<!-- <form action="/guests" method="post">
+
+  <label for="name">Your name</label>
+  <input type="text" name="guest[name]">
+
+  <label for="name">Your age</label>
+  <input type="text" name="guest[age]">
+
+  <label for="name">Your location</label>
+  <input type="text" name="guest[locatoin]">
+
+  <input type="submit">
+</form> -->
