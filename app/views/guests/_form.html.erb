@@ -1,0 +1,13 @@
+<%= form_for @guest do |f| %>
+  <%= f.label :name, "your name" %>
+  <%= f.text_field :name %>
+
+  <%= f.label :age, "your age" %>
+  <%= f.text_field :age %>
+
+  <%= f.label :location, "your location" %>
+  <%= f.text_field :location %>
+
+  <%= f.submit %>
+
+<% end %>

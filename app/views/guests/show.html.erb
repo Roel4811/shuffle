@@ -3,5 +3,6 @@
   <p><%= @guest.location %></p>
 
   <p><%= link_to "delete account", guest_path(@guest), method: :delete %></p>
+  <p><%= link_to "edit account", edit_guest_path(@guest) %></p>
 
 <%= link_to "back", guests_path %>
