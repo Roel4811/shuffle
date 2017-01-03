@@ -1,13 +1,29 @@
-<%= form_for @guest do |f| %>
-  <%= f.label :name, "your name" %>
-  <%= f.text_field :name %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+    <%= form_for @guest do |f| %>
 
-  <%= f.label :age, "your age" %>
-  <%= f.text_field :age %>
+      <div class="form-group">
+        <%= f.label :name, "your name" %>
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
 
-  <%= f.label :location, "your location" %>
-  <%= f.text_field :location %>
+      <div class="form-group">
+        <%= f.label :age, "your age" %>
+        <%= f.text_field :age, class: "form-control" %>
+      </div>
 
-  <%= f.submit %>
+      <div class="form-group">
+        <%= f.label :location, "your location" %>
+        <%= f.text_field :location, class: "form-control" %>
+      </div>
+      <%= f.submit "Go", class: "btn btn-primary" %>
+    <% end %>
 
-<% end %>
+    </div>
+  </div>
+</div>
+
+
+
+
