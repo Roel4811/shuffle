@@ -1,22 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-    <%= form_for @guest do |f| %>
+    <%= simple_form_for @guest do |f| %>
 
-      <div class="form-group">
-        <%= f.label :name, "your name" %>
-        <%= f.text_field :name, class: "form-control" %>
-      </div>
+        <%= f.input :name %>
+        <%= f.input :age %>
+        <%= f.input :location %>
 
-      <div class="form-group">
-        <%= f.label :age, "your age" %>
-        <%= f.text_field :age, class: "form-control" %>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :location, "your location" %>
-        <%= f.text_field :location, class: "form-control" %>
-      </div>
       <%= f.submit "Go", class: "btn btn-primary" %>
     <% end %>
 
