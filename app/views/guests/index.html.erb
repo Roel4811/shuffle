@@ -1,13 +1,15 @@
-<h1 class="text-center"> All our Guests </h1>
+<h1 class="text-center"> Find your match </h1>
 
 <div class="container">
   <div class="row">
     <% @guests.each do |guest| %>
       <div class="col-xs-12 col-sm-6 col-md-3">
-        <h2><%= guest.name %></h2>
-        <p><%= guest.age %></p>
-        <p><%= guest.location %></p>
-        <p><%= link_to "show profile", guest_path(guest), class: "btn btn-primary" %></p>
+        <div class="card">
+          <h2><%= guest.name %></h2>
+          <p><%= guest.age %></p>
+          <p><%= guest.location %></p>
+          <p><%= link_to "show profile", guest_path(guest), class: "btn btn-primary" %></p>
+        </div>
       </div>
     <% end %>
   </div>
