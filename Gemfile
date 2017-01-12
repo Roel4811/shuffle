@@ -33,6 +33,7 @@ gem 'jbuilder', '~> 2.5'
 # front-end gems
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'simple_form'
+gem "haml", '3.0.25'
 
 
 group :development, :test do
@@ -50,6 +51,7 @@ group :development do
   #added gems for debugging
   gem "better_errors"
   gem "binding_of_caller"
+  gem 'haml-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
