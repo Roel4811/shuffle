@@ -5,10 +5,27 @@
     <% @guests.each do |guest| %>
       <div class="col-xs-12 col-sm-6 col-md-3">
         <div class="card">
-          <h2><%= guest.name %></h2>
-          <p><%= guest.age %></p>
-          <p><%= guest.location %></p>
-          <p><%= link_to "show profile", guest_path(guest), class: "btn btn-primary" %></p>
+          <div class="card_thumb">
+            <img src="http://lorempixel.com/370/235/people/" alt="">
+
+           <!--  <h2><%#= guest.name %></h2>
+            <p><%#= guest.age %></p>
+            <p><%#= guest.location %></p>
+            <p><%#= link_to "show profile", guest_path(guest), class: "btn btn-primary" %></p> -->
+          </div>
+          <div class="card_date">
+            <span class="card_date_day">12</span>
+            <span class="card_date_month">April</span>
+          </div>
+          <div class="card_body">
+            <div class="card_category"><a href="#">Photo´s</a></div>
+            <div class="card_title"><a href="#">title</a></div>
+            <div class="card_subtitle">subtitle</div>
+            <div class="card_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas maiores in alias dolore quo quisquam laborum fuga sequi necessitatibus eveniet quam iure, perspiciatis, sit iste soluta ea quibusdam quae atque.</div>
+          </div>
+          <footer class="card_footer">
+            <span class="icon icon--time"></span>last online(yesterday)
+          </footer>
         </div>
       </div>
     <% end %>
