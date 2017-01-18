@@ -35,15 +35,42 @@ $color: orange;
 
   background-color: $color;
   border-radius: 50%;
+
+  &_day{
+    display: block;
+    font-size: 14px;
+  }
+
+  &_month{
+    display: block;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
 }
 
-.card_date_day{
-  display: block;
-  font-size: 14px;
+.card_thumb{
+  height: 235px;
+  overflow: hidden;
+  background-color: #000;
+  transition: height $duration;
+
+  img{
+    display: block;
+    opacity: 1;
+    transition: opacity $duration, transform $duration;
+    transform: scale(1);
+  }
+
+  .card:hover & img{
+    opacity: 0.6;
+    transform: scale(1.2);
+  }
+
+  .card:hover &{
+    height: 96px;
+  }
 }
 
-.card_date_month{
-  display: block;
-  font-size: 10px;
+.card:hover .card_thumb img{
+  opacity: 0.6;
 }
-
