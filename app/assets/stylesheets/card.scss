@@ -3,6 +3,11 @@ $color: orange;
 * { box-sizing: border-box; }
 
 
+.cards_flex{
+  display: flex;
+  justify-content: space-around;
+}
+
 .card {
   position: absolute;
   overflow: hidden;
@@ -161,9 +166,9 @@ $color: orange;
   margin-right: 2px;
 }
 
-.icon--time{
-  background: url(../img/icon-time.png);
-  width: 10px;
-  height: 17px;
-  margin-top: -3px;
-}
+// .icon--time{
+//   background: url(../img/icon-time.png);
+//   width: 10px;
+//   height: 17px;
+//   margin-top: -3px;
+// }
