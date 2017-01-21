@@ -11,17 +11,14 @@ body {
   line-height: 1.4;
 }
 
-.main {
-  height: 100vh;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-weight: 100;
 }
 
 .wrapper {
-  width: 80%;
-  margin: 0 auto;
+  width: 100%;
+  // height: 100vh;
+  // margin: 0 auto;
 }
 
 .clearfix:before, .clearfix:after {
