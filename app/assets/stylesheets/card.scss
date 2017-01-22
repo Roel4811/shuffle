@@ -50,6 +50,8 @@ $color: orange;
 }
 
 .card_thumb{
+  // background: url(profile.jpg);
+  // background-size: cover;
   height: 235px;
   overflow: hidden;
   background-color: #000;
@@ -68,7 +70,7 @@ $color: orange;
   }
 
   .card:hover &{
-    height: 96px;
+    height: 235px - 145px;
   }
 }
 
