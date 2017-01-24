@@ -36,7 +36,7 @@ gem 'simple_form'
 gem 'haml', '~> 4.0', '>= 4.0.7'
 
 #cloudinary
-gem 'cloudinary', '1.1.0'
+gem 'cloudinary'
 gem 'figaro'
 
 group :development, :test do
