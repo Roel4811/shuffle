@@ -13,7 +13,12 @@
         <h2 class="card_title"><a href="#"><%= guest.name %></a></h2>
         <div class="card_subtitle">age: <%= guest.age %> <br> location: <%= guest.location %>
         </div>
-        <div class="card_description"><%= guest.description %></div>
+        <div class="card_description"><%= guest.description %>
+          <br>
+          <br>
+          <%= link_to "show profile", guest_path(guest), class: "button" %>
+        </div>
+
       </div>
       <footer class="card_footer">
         <span class="icon icon--time"></span>last online(yesterday)
