@@ -2,6 +2,14 @@
   <p><%= @guest.age %></p>
   <p><%= @guest.location %></p>
 
+  <%= cl_image_tag("wnuz07n1wsx1hx6qrjox",
+      width: 400, height: 300, crop: :fill, :effect=>"art:red_rock") %>
+
+  <%= cl_image_tag("aa6hj3mx0nnntjxmtpt1",
+        width: 400, height: 300, crop: :thumb, gravity: :face) %>
+
+
+
   <p><%= link_to "delete account", guest_path(@guest), method: :delete %></p>
   <p><%= link_to "edit account", edit_guest_path(@guest) %></p>
 
