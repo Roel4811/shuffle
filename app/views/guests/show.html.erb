@@ -2,7 +2,7 @@
   <p><%= @guest.age %></p>
   <p><%= @guest.location %></p>
 
-  <%= cl_image_tag("nd0ctrcmltg5rnzyuesv", width: 400, height: 300, crop: :fill, :effect=>"art:red_rock") %>
+  <%= image_tag @guest.photo.url(:bright_face) %>
 
 
 

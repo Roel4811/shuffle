@@ -2,7 +2,7 @@
   <div class="col-xs-12 col-sm-6 col-md-4">
     <div class="card">
       <div class="card_thumb">
-        <%= image_tag("profile.jpg", size: "370x250", alt: "") %>
+        <%= cl_image_tag guest.photo, height: 250, width: 370, crop: :fill %>
       </div>
       <div class="card_date">
         <span class="card_date_day">12</span>

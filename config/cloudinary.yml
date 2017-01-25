@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: dpacrtp2n
+  api_key: '988941438487159'
+  api_secret: 87dwT-oyU68hI068-QlhWIrhW0I
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: dpacrtp2n
+  api_key: '988941438487159'
+  api_secret: 87dwT-oyU68hI068-QlhWIrhW0I
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: dpacrtp2n
+  api_key: '988941438487159'
+  api_secret: 87dwT-oyU68hI068-QlhWIrhW0I
+  enhance_image_tag: true
+  static_image_support: false
