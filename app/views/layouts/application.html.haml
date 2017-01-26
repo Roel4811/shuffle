@@ -17,8 +17,10 @@
         = link_to 'update profile', root_path, class: "button"
         = link_to 'sign in', root_path, class: "button"
 
-  %p.notice= notice
-  %p.alert= alert
+  / %p.notice= notice
+  / %p.alert= alert
+  = render "shared/flashes"
+
   .wrapper
     = yield
 
