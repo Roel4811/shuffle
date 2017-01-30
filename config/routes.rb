@@ -2,24 +2,24 @@ Rails.application.routes.draw do
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  resources :guests
-  root 'guests#index'
-  # # show all guests
-  # get "guests", to: "guests#index"
+  resources :profiles
+  root 'profiles#index'
+  # # show all profiles
+  # get "profiles", to: "profiles#index"
 
-  # # show one guest
-  # get "guests/:id", to: "guests#show"
+  # # show one profile
+  # get "profiles/:id", to: "profiles#show"
 
-  # # create guest (2 requests)
+  # # create profile (2 requests)
   # # first request to get the form, second to post the params
-  # get "guests/new", to: "guests#new"
-  # post "guests", to: "guests#create"
+  # get "profiles/new", to: "profiles#new"
+  # post "profiles", to: "profiles#create"
 
-  # # update guest (2 requests)
-  # get "guests/:id/edit", to: "guests#edit"
-  # patch "guests/:id", to: "guests#update"
+  # # update profile (2 requests)
+  # get "profiles/:id/edit", to: "profiles#edit"
+  # patch "profiles/:id", to: "profiles#update"
 
-  # # delete guest
-  # delete "guests/:id", to: "guests#destroy"
+  # # delete profile
+  # delete "profiles/:id", to: "profiles#destroy"
 
 end

@@ -1,8 +1,8 @@
-<% @guests.each do |guest| %>
+<% @profiles.each do |profile| %>
   <div class="col-xs-12 col-sm-6 col-md-4">
     <div class="card">
       <div class="card_thumb">
-        <%= cl_image_tag guest.photo, height: 250, width: 370, crop: :fill %>
+        <%= cl_image_tag profile.photo, height: 250, width: 370, crop: :fill %>
       </div>
       <div class="card_date">
         <span class="card_date_day">12</span>
@@ -10,13 +10,13 @@
       </div>
       <div class="card_body">
         <div class="card_category"><a href="#">Photo´s</a></div>
-        <h2 class="card_title"><a href="#"><%= guest.name %></a></h2>
-        <div class="card_subtitle">age: <%= guest.age %> <br> location: <%= guest.location %>
+        <h2 class="card_title"><a href="#"><%= profile.name %></a></h2>
+        <div class="card_subtitle">age: <%= profile.age %> <br> location: <%= profile.location %>
         </div>
-        <div class="card_description"><%= guest.description %>
+        <div class="card_description"><%= profile.description %>
           <br>
           <br>
-          <%= link_to "show profile", guest_path(guest), class: "button" %>
+          <%= link_to "show profile", profile_path(profile), class: "button" %>
         </div>
 
       </div>

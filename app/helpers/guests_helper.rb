@@ -1,2 +1,2 @@
-module GuestsHelper
+module ProfilesHelper
 end

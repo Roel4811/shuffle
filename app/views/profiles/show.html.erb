@@ -1,0 +1,14 @@
+  <h1><%= @profile.name %></h1>
+  <p><%= @profile.age %></p>
+  <p><%= @profile.location %></p>
+
+  <%= image_tag @profile.photo.url(:bright_face) %>
+
+
+
+
+
+  <p><%= link_to "delete account", profile_path(@profile), method: :delete %></p>
+  <p><%= link_to "edit account", edit_profile_path(@profile) %></p>
+
+<%= link_to "back", profiles_path %>
