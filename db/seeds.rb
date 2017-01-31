@@ -12,6 +12,8 @@ felix = Profile.new(name: "Felix de Rijk", age: 24, location: "Breda", descripti
 felix.remote_photo_url = felix_photo_url
 felix.save
 
+u1 = User.create!({:email => "ftrijk@gmail.com", :roles => ["admin"], :password => "password", :password_confirmation => "password" })
+
 random_photo_url = "http://res.cloudinary.com/dpacrtp2n/image/upload/v1485362968/aa6hj3mx0nnntjxmtpt1.jpg"
 randomchick = Profile.new(name: "Random chick", age: 28, location: "Amsterdam", description: "Na een gebroken hart ben ik weer klaar voor de datingwereld")
 randomchick.remote_photo_url = random_photo_url
