@@ -16,7 +16,8 @@ class ProfilesController < ApplicationController
   end
 
   def create
-    Profile.create(profile_params)
+    new_profile = Profile.new(profile_params)
+    new_profile.save!
     redirect_to profiles_path
   end
 

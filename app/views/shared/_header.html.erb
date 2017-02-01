@@ -4,8 +4,14 @@
       <%= link_to "Shuffle", root_path %>
     </div>
     <nav>
-      <%= link_to 'Help', root_path, class: "button" %>
-      <%= link_to 'Sign in', root_path, class: "button" %>
+      <%#= link_to 'Help', root_path, class: "button" %>
+      <% if user_signed_in? && current_user.profile_id %>
+        <%= link_to 'My Profile', profile_path(current_user), class: "button" %>
+      <% elsif user_signed_in? && !current_user.profile_id %>
+        <%= link_to 'Create Profile', new_profile_path, class: "button" %>
+      <% else %>
+        <%= link_to 'Sign in', new_user_session_path, class: "button" %>
+      <% end %>
     </nav>
   </div>
 </header>
