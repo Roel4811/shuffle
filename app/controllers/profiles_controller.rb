@@ -2,6 +2,7 @@ class ProfilesController < ApplicationController
 
   before_action :set_profile, only: [:show, :edit, :update, :destroy]
   skip_before_action :authenticate_user!, only: [:index]
+  before_action :find_user, only: [:create]
 
   def index
     @profiles = Profile.all
@@ -16,8 +17,9 @@ class ProfilesController < ApplicationController
   end
 
   def create
-    new_profile = Profile.new(profile_params)
-    new_profile.save!
+    @profile = Profile.new(profile_params)
+    @profile.user = @user
+    @profile.save!
     redirect_to profiles_path
   end
 
@@ -35,6 +37,10 @@ class ProfilesController < ApplicationController
   end
 
   private
+
+  def find_user
+    @user = current_user
+  end
 
   def profile_params
     params.require(:profile).permit(:name, :age, :location, :photo, :photo_cache)
