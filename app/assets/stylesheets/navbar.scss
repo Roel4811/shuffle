@@ -27,10 +27,10 @@ header {
   }
 }
 
-#headerLink {
+.headerLink {
   margin-right: 3rem;
-}
-
-#headerLinkRight {
-  margin-right: 8rem;
+  font-size: 12px;
+  &.Right {
+    margin-right: 8rem;
+  }
 }

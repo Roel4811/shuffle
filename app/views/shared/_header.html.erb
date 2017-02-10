@@ -5,9 +5,9 @@
     </div>
     <nav>
 
-      <%= link_to 'FAQ', new_user_session_path, id: "headerLink" %>
-      <%= link_to 'Help', new_user_session_path, id: "headerLink" %>
-      <%= link_to 'Contact', new_user_session_path, id: "headerLinkRight" %>
+      <%= link_to 'FAQ', new_user_session_path, class: "headerLink" %>
+      <%= link_to 'Help', new_user_session_path, class: "headerLink" %>
+      <%= link_to 'Contact', new_user_session_path, class: "headerLink Right" %>
 
       <% if user_signed_in? %>
         <%= link_to 'My Profile', profile_path(current_user.profile), class: "button" %>
