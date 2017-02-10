@@ -1,0 +1,21 @@
+.button {
+  border: 1px solid #9B9B9B;
+  font-size: 13px;
+  padding: 15px;
+  border-radius: .3rem;
+  outline: none;
+  background: white;
+  color: #9B9B9B;
+  &.fullred {
+    background: #ff585b;
+    border: none;
+    color: white;
+  }
+  &.borderblue {
+    border: 1px solid #66aae9;
+    color: #66aae9;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}

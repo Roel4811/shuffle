@@ -6,7 +6,7 @@ header {
     float: left;
     font-size: 1.75rem;
     a {
-      color: #333233;
+      color: #7d7d7d;
       text-decoration: none;
       &:hover {
         color: #50A7C7;
@@ -18,11 +18,19 @@ header {
     a {
       margin-left: 1.5rem;
       line-height: 2;
-      color: #9B9B9B;
+      color: #7d7d7d;
       text-decoration: none;
       &:hover {
-        color: #50A7C7;
+        text-decoration: none;
       }
     }
   }
+}
+
+#headerLink {
+  margin-right: 3rem;
+}
+
+#headerLinkRight {
+  margin-right: 8rem;
 }

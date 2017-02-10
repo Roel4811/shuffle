@@ -4,13 +4,18 @@
       <%= link_to "Shuffle", root_path %>
     </div>
     <nav>
-      <%#= link_to 'Help', root_path, class: "button" %>
+
+      <%= link_to 'FAQ', new_user_session_path, id: "headerLink" %>
+      <%= link_to 'Help', new_user_session_path, id: "headerLink" %>
+      <%= link_to 'Contact', new_user_session_path, id: "headerLinkRight" %>
+
       <% if user_signed_in? %>
         <%= link_to 'My Profile', profile_path(current_user.profile), class: "button" %>
       <% elsif user_signed_in? && current_user.profile == nil %>
         <%= link_to 'Create Profile', new_profile_path, class: "button" %>
       <% else %>
-        <%= link_to 'Sign in', new_user_session_path, class: "button" %>
+        <%= link_to 'Aanmelden', new_user_session_path, class: "button fullred" %>
+        <%= link_to 'Log in', new_user_session_path, class: "button borderblue" %>
       <% end %>
     </nav>
   </div>

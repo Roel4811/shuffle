@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   # end
 
   resources :profiles
-  root 'profiles#index'
+  root 'pages#home'
   # # show all profiles
   # get "profiles", to: "profiles#index"
 

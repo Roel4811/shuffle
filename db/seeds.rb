@@ -5,8 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-
+User.destroy_all
 Profile.destroy_all
+
 felix_photo_url = "http://res.cloudinary.com/dpacrtp2n/image/upload/v1485364448/nd0ctrcmltg5rnzyuesv.jpg"
 felix = Profile.new(name: "Felix de Rijk", age: 24, location: "Breda", description: "Ik ben een lekkere jongen uit breda op zoek naar actie")
 felix.remote_photo_url = felix_photo_url
