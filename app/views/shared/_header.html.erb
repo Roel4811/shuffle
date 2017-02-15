@@ -9,10 +9,10 @@
       <%= link_to 'Help', new_user_session_path, class: "headerLink" %>
       <%= link_to 'Contact', new_user_session_path, class: "headerLink Right" %>
 
-      <% if user_signed_in? %>
-        <%= link_to 'My Profile', profile_path(current_user.profile), class: "button" %>
-      <% elsif user_signed_in? && current_user.profile == nil %>
+      <% if user_signed_in? && current_user.profile_id == nil %>
         <%= link_to 'Create Profile', new_profile_path, class: "button" %>
+      <% elsif user_signed_in? %>
+        <%= link_to 'My Profile', profile_path(current_user.profile_id), class: "button" %>
       <% else %>
         <%= link_to 'Aanmelden', new_user_session_path, class: "button fullred" %>
         <%= link_to 'Log in', new_user_session_path, class: "button borderblue" %>
