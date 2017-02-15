@@ -12,12 +12,12 @@
         <%= f.email_field :email, class: "homeFormField", placeholder: "Email adres" %>
         <%= f.password_field :password, class: "homeFormField", placeholder: "Wachtwoord" %>
         <%= f.password_field :password_confirmation, class: "homeFormField", placeholder: "Wachtwoord opnieuw" %> <br />
+        <p>Geboortedatum</p>
+        <div class="homeFormDate">
+          <%= f.date_select :birthday, :start_year=>1900 %>
+        </div>
         <div class="signupBox"><%= f.submit "Gratis Aanmelden", id: "signupLink" %></div>
       <% end %>
-
-      <p>Geboortedatum</p>
-
-      <%#= render "devise/shared/links" %>
 
   </div>
 </div>
