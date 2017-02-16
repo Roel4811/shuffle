@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   # end
 
   resources :profiles
+  resources :chat_rooms, only: [:new, :create, :show, :index]
   root 'pages#home'
   # # show all profiles
   # get "profiles", to: "profiles#index"
