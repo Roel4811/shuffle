@@ -43,6 +43,9 @@ gem 'carrierwave'
 #authentication
 gem 'devise'
 
+# redis for chat
+gem 'redis', '~> 3.2'
+
 #admin
 gem 'remotipart', github: 'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
