@@ -1,4 +1,8 @@
-App.global_chat = App.cable.subscriptions.create {
+jQuery(document).on 'turbolinks:load', ->
+  messages = $('#messages')
+  if $('#messages').length > 0
+
+    App.global_chat = App.cable.subscriptions.create {
     channel: "ChatRoomsChannel"
     chat_room_id: ''
   },
