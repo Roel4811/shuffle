@@ -2,10 +2,13 @@ class User < ApplicationRecord
   has_one :profile, dependent: :destroy
   has_many :chat_rooms, dependent: :destroy
   has_many :messages, dependent: :destroy
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
+  devise :omniauthable, omniauth_providers: [:facebook]
+
   validates :email, presence: true
   validates :username, length: {maximum: 255}, uniqueness: { case_sensitive: false }, format: { with: /\A[a-zA-Z0-9]*\z/, message: "may only contain letters and numbers." }
 
