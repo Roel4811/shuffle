@@ -42,6 +42,7 @@ gem 'carrierwave'
 
 #authentication
 gem 'devise'
+gem 'omniauth-facebook'
 
 # redis for chat
 gem 'redis', '~> 3.2'
