@@ -18,7 +18,7 @@
 }
 
 .teaserContainer {
-  height: 500px;
+  height: 300px;
   padding: 50px;
 }
 
@@ -40,4 +40,24 @@
 .teaserHeader {
   text-align: center;
   align-content: center;
+
+  h1 {
+    margin-bottom: 5px;
+  }
+}
+
+.teaserCardsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 500px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.teaserCard {
+  height: 350px;
+  width: 280px;
+  border: 1px solid #ff585b;
 }
