@@ -11,6 +11,10 @@
     border: none;
     color: white;
   }
+  &.borderred {
+    border: 1px solid #ff585b;
+    color: #ff585b;
+  }
   &.borderblue {
     border: 1px solid #66aae9;
     color: #66aae9;
@@ -19,3 +23,9 @@
     text-decoration: none;
   }
 }
+
+.long {
+  display: inline-block;
+}
+
+
