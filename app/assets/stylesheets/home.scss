@@ -46,14 +46,13 @@
   }
 }
 
-.teaserCardsContainer {
+.flexCard {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 500px;
-  padding-bottom: 50px;
-  padding-left: 100px;
-  padding-right: 100px;
+  // padding-bottom: 50px;
+  // padding-left: 100px;
+  // padding-right: 100px;
 }
 
 .teaserCard {
