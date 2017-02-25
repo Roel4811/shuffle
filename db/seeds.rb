@@ -13,7 +13,7 @@ t = User.create!({:username => "Thijmen", :email => "thijmenhoebink@hotmail.com"
 r = User.create!({:username => "randomchick", :email => "random@hotmail.com", :password => "password"})
 
 
-felix = Profile.new(name: "Felix de Rijk", age: 24, location: "Breda", user_id: f.id, description: "Ik ben een lekkere jongen uit breda op zoek naar actie")
+felix = Profile.new(name: "Felix", age: 24, location: "Breda", user_id: f.id, description: "Ik ben een lekkere jongen uit breda op zoek naar actie")
 felix_photo_url = "http://res.cloudinary.com/dpacrtp2n/image/upload/v1485364448/nd0ctrcmltg5rnzyuesv.jpg"
 felix.remote_photo_url = felix_photo_url
 felix.save

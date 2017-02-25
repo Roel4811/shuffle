@@ -1,44 +1,63 @@
-  <div class="flexCard">
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="teaserCard">
-        kaart 1
+<div class="flexCard">
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="teaserCard">
+      <div class="teaserCard_thumb">
+        <%= cl_image_tag @thijmen.photo, height: 200, width: 200, crop: :fill %>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="teaserCard">
-        kaart 2
+      <div class="teaserCard_body">
+        <div class="card_info">
+          leeftijd: <%= @thijmen.age %> <br>
+          woonplaats: <%= @thijmen.location %> <br>
+          beroep: freelance
+          <%= @thijmen.description %>
+        </div>
       </div>
-    </div>
-    <div class="col-xs-12 col-sm-6 col-md-4">
-      <div class="teaserCard">
-        kaart 3
+      <div class="contactBox">
+        <%= link_to "Neem contact op ;-)", new_user_session_path, class: "signupLink" %>
       </div>
     </div>
   </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="teaserCard">
+      <div class="teaserCard_thumb">
+        <%= cl_image_tag @felix.photo, height: 200, width: 200, crop: :fill %>
+      </div>
+      <div class="teaserCard_body">
+        <div class="card_info">
+          leeftijd: <%= @felix.age %> <br>
+          woonplaats: <%= @felix.location %> <br>
+          beroep: freelance
+          <%= @felix.description %>
+        </div>
+      </div>
+      <div class="contactBox">
+        <%= link_to "Neem contact op ;-)", new_user_session_path, class: "signupLink" %>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="teaserCard">
+      <div class="teaserCard_thumb">
+        <%= cl_image_tag @random.photo, height: 200, width: 200, crop: :fill %>
+      </div>
+      <div class="teaserCard_body">
+        <div class="card_info">
+          leeftijd: <%= @random.age %> <br>
+          woonplaats: <%= @random.location %> <br>
+          beroep: freelance
+          <%= @random.description %>
+        </div>
+      </div>
+      <div class="contactBox">
+        <%= link_to "Neem contact op ;-)", new_user_session_path, class: "signupLink" %>
+      </div>
+    </div>
+  </div>
+
+
 </div>
 
 
-    <!-- <div class="card_thumb">
-      <%#= cl_image_tag @teaserProfile.photo, height: 250, width: 370, crop: :fill %>
-    </div>
-    <div class="card_date">
-      <span class="card_date_day">12</span>
-      <span class="card_date_month">April</span>
-    </div>
-    <div class="card_body">
-      <div class="card_category"><a href="#">Photo´s</a></div>
-      <h2 class="card_title"><a href="#"><%#= @teaserProfile.name %></a></h2>
-      <div class="card_subtitle">age: <%#= @teaserProfile.age %> <br> location: <%#= @teaserProfile.location %>
-      </div>
-      <div class="card_description"><%#= @teaserProfile.description %>
-        <br>
-        <br>
-        <%#
-        = link_to "show profile", profile_path(@teaserProfile), class: "button" %>
-      </div>
 
-    </div>
-    <footer class="card_footer">
-      <span class="icon icon--time"></span>last online(yesterday)
-    </footer>
- -->
