@@ -1,21 +1,29 @@
 <div class="review">
-<%= cl_image_tag(@felix.photo, :transformation=>[
-  {:width=>500, :height=>500, :gravity=>"face", :radius=>"max", :crop=>"crop"},
-  {:width=>100, :crop=>"scale"}]) %>
-<h1>Hans Blijker - Zwolle</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate reprehenderit dolorum iusto officiis, voluptate nihil nulla beatae obcaecati fuga, nesciunt atque rerum odit ut quis reiciendis aperiam veritatis explicabo?</p>
+  <div class="reviewAvatar">
+    <%= cl_image_tag(@felix.photo, :transformation=>[
+      {:width=>500, :height=>500, :gravity=>"face", :radius=>"max", :crop=>"crop"},
+      {:width=>100, :crop=>"scale"}]) %>
+  </div>
+  <h1>Hans Blijker - Zwolle</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid cupiditate reprehenderit dolorum iusto officiis, voluptate nihil nulla beatae obcaecati fuga, nesciunt atque rerum odit ut quis reiciendis aperiam veritatis explicabo?</p>
 </div>
 
 <div class="review">
-<%= cl_image_tag(@thijmen.photo, :transformation=>[
-  {:width=>500, :height=>500, :gravity=>"face", :radius=>"max", :crop=>"crop"},
-  {:width=>100, :crop=>"scale"}]) %>
-<h1>Hans Blijker - Zwolle</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At totam maxime eum rem, harum dolor itaque explicabo tenetur similique in ea sed quo ipsa consectetur magni non dolore et numquam?</p>
+  <div class="reviewAvatar">
+    <%= cl_image_tag(@thijmen.photo, :transformation=>[
+      {:width=>500, :height=>500, :gravity=>"face", :radius=>"max", :crop=>"crop"},
+      {:width=>100, :crop=>"scale"}]) %>
+  </div>
+  <h1>Hans Blijker - Zwolle</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At totam maxime eum rem, harum dolor itaque explicabo tenetur similique in ea sed quo ipsa consectetur magni non dolore et numquam?</p>
 </div>
 
 <div class="review">
-<img src="user.jpg" alt="user" class="avatar-large">
-<h1>Hans Blijker - Zwolle</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi delectus laboriosam alias nihil non placeat praesentium modi saepe accusantium. Quae iure doloremque totam itaque unde omnis quibusdam, voluptatem laudantium! Eos.</p>
+  <div class="reviewAvatar">
+    <%= cl_image_tag(@random.photo, :transformation=>[
+      {:width=>500, :height=>500, :gravity=>"face", :radius=>"max", :crop=>"crop"},
+      {:width=>100, :crop=>"scale"}]) %>
+  </div>
+  <h1>Hans Blijker - Zwolle</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi delectus laboriosam alias nihil non placeat praesentium modi saepe accusantium. Quae iure doloremque totam itaque unde omnis quibusdam, voluptatem laudantium! Eos.</p>
 </div>
