@@ -15,7 +15,7 @@
         <%= image_tag avatar_url, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
       <% elsif user_signed_in? %>
         <%= link_to 'Create Profile', new_profile_path, class: "button" %>
-        <%= image_tag avatar_url, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+        <%#= image_tag avatar_url, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
       <% else %>
         <%= link_to 'Aanmelden', new_user_session_path, class: "button fullred" %>
         <%= link_to 'Log in', new_user_session_path, class: "button borderblue" %>

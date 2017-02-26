@@ -3,15 +3,15 @@
    Shuffle is nu 100% gratis!</h1>
   <div class="banner-content">
       <h2>Meld je aan met <a href="#">Facebook</a> of <a href="#">Google</a></h2>
-
      <h3><span>of</span></h3>
 
       <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
         <%= devise_error_messages! %>
 
-        <%= f.email_field :email, class: "homeFormField", placeholder: "Email adres" %>
-        <%= f.password_field :password, class: "homeFormField", placeholder: "Wachtwoord" %>
-        <%= f.password_field :password_confirmation, class: "homeFormField", placeholder: "Wachtwoord opnieuw" %>
+        <%= f.email_field :email, required: true, autofocus: true, class: "homeFormField", placeholder: "Email adres" %>
+        <%= f.text_field :username, class: "homeFormField", placeholder: "Gebruikersnaam" %>
+        <%= f.password_field :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length), class: "homeFormField", placeholder: "Wachtwoord" %>
+        <%= f.password_field :password_confirmation, required: true, class: "homeFormField", placeholder: "Wachtwoord opnieuw" %>
         <br />
         <p>Geboortedatum</p>
         <div class="homeFormDate">
