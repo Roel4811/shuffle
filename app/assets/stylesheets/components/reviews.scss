@@ -1,0 +1,29 @@
+.reviewContainer {
+  height: 600px;
+  width: 100%;
+  background: #fdf9f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  h1 {
+    color: #666C74;
+    font-size: 23px;
+  }
+}
+
+.review {
+  height: 90px;
+  width: 40%;
+  border: 1px solid red;
+  background: white;
+
+  h1 {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 11px;
+  }
+}
