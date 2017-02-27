@@ -11,6 +11,16 @@
   <div class="profileForm">
     <h1>Mijn profiel</h1>
     <h3>Vereiste gegevens</h3>
+          <%= form_for @profile do |f| %>
+
+        <%= f.text_field :name, class: "homeFormField", placeholder: "Naam" %>
+        <%= f.text_field :age, class: "homeFormField", placeholder: "Leeftijd"  %>
+        <%= f.text_field :location, class: "homeFormField", placeholder: "Woonplaats"  %>
+        <%= f.file_field  :photo, class: "homeFormField", placeholder: "Foto"  %>
+        <%= f.hidden_field  :photo_cache %>
+
+      <%= f.submit "Go", class: "btn btn-primary" %>
+    <% end %>
   </div>
   <div class="profileScore">
     <h1>Profielscore: 60% </h1>

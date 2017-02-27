@@ -6,18 +6,29 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  padding: 70px;
 }
 
 .leftMenu {
-  height: 100px;
+  height: 250px;
   width: 30%;
   border: 1px solid red;
+  padding: 40px;
+  line-height: 2em;
+  margin-top: 30px;
+  ul {
+  list-style-type: none;
+  }
 }
 
 .profileForm {
   width: 30%;
   height: 300px;
   border: 1px solid red;
+
+  label {
+    display: none;
+  }
 }
 
 .profileScore {
