@@ -1,3 +1,26 @@
 // Place all the styles related to the profiles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.profileContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.leftMenu {
+  height: 100px;
+  width: 30%;
+  border: 1px solid red;
+}
+
+.profileForm {
+  width: 30%;
+  height: 300px;
+  border: 1px solid red;
+}
+
+.profileScore {
+  width: 30%;
+  height: 500px;
+}

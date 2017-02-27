@@ -90,6 +90,10 @@
   color: white;
   background-color: #ff585b;
   border: none;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .homeFormField {
