@@ -1,11 +1,11 @@
 <div class="profileContainer">
   <div class="leftMenu">
     <ul>
-      <li>Profiel instellingen</li>
-      <li>Ontvangen contactverzoeken</li>
-      <li>Verzonden contactverzoeken</li>
-      <li>Favorieten</li>
-      <li>Mijn chats</li>
+      <li class="active" ><a href="">Profiel instellingen</a></li>
+      <li><a href="">Ontvangen contactverzoeken</a></li>
+      <li><a href="">Verzonden contactverzoeken</a></li>
+      <li><a href="">Favorieten</a></li>
+      <li><a href="">Mijn chats</a></li>
     </ul>
   </div>
   <div class="profileForm">
@@ -19,8 +19,9 @@
         <%= f.file_field  :photo, class: "homeFormField", placeholder: "Foto"  %>
         <%= f.hidden_field  :photo_cache %>
 
-      <%= f.submit "Go", class: "btn btn-primary" %>
-    <% end %>
+        <%= f.submit 'Sla mijn profiel op', style: "width:80%;", class: "button fullred long sharp " %>
+      <% end %>
+
   </div>
   <div class="profileScore">
     <h1>Profielscore: 60% </h1>

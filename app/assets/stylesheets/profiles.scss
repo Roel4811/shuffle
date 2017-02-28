@@ -12,19 +12,26 @@
 .leftMenu {
   height: 250px;
   width: 30%;
-  border: 1px solid red;
   padding: 40px;
   line-height: 2em;
   margin-top: 30px;
   ul {
-  list-style-type: none;
+    list-style-type: none;
+  }
+  li {
+    width: 120%;
+    padding-left: 25px;
+  }
+  a {
+    text-decoration: none;
+    color: #666C74;
+    font-size: 12px;
   }
 }
 
 .profileForm {
   width: 30%;
-  height: 300px;
-  border: 1px solid red;
+  height: 500px;
 
   label {
     display: none;
@@ -34,4 +41,12 @@
 .profileScore {
   width: 30%;
   height: 500px;
+}
+
+.active {
+  background: rgba(211, 211, 211, 0.19);
+  border-right: 1px solid grey;
+  a {
+    color: red;
+  }
 }

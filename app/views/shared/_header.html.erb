@@ -12,7 +12,7 @@
 
       <% if user_signed_in? && current_user.profile %>
         <%= link_to 'My Profile', profile_path(current_user.profile), class: "button" %>
-        <%= image_tag avatar_url, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
+        <%#= image_tag avatar_url, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
       <% elsif user_signed_in? %>
         <%= link_to 'Create Profile', new_profile_path, class: "button" %>
         <%#= image_tag avatar_url, class: "avatar dropdown-toggle", id: "navbar-wagon-menu", "data-toggle" => "dropdown" %>
