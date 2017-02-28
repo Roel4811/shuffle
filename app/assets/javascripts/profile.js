@@ -1,6 +1,7 @@
 $(function(){
 
   $(".tab").on("click", function(e){
+    e.preventDefault();
     // Change active tab
     $(".tab").removeClass('active');
     $(this).addClass('active');
