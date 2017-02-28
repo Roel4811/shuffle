@@ -9,6 +9,7 @@
     </ul>
   </div>
   <div class="profileForm tab-content" id="profileForm">
+    <%= render "profile_form" %>
     <h1>Mijn profiel</h1>
     <h3>Vereiste gegevens</h3>
           <%= form_for @profile do |f| %>
@@ -23,6 +24,16 @@
       <% end %>
 
   </div>
+
+  <div class="contactReceived" id="contact-received">
+    <%= render "contact_received" %>
+  </div>
+
+  <div class="contactSend" id="contact-send">
+    <%= render "contact_send" %>
+  </div>
+
+
   <div class="profileScore">
     <h1>Profielscore: 60% </h1>
     <div class="teaserCard">
