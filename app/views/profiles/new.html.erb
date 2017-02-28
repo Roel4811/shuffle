@@ -1,14 +1,14 @@
 <div class="profileContainer">
   <div class="leftMenu">
     <ul>
-      <li class="tab active"><a href="">Profiel instellingen</a></li>
-      <li class="tab"><a href="">Ontvangen contactverzoeken</a></li>
-      <li class="tab"><a href="">Verzonden contactverzoeken</a></li>
-      <li class="tab"><a href="">Favorieten</a></li>
-      <li class="tab"><a href="">Mijn chats</a></li>
+      <li class="tab active" data-target="#profileForm"><a href="">Profiel instellingen</a></li>
+      <li class="tab" data-target="#contact-received"><a href="">Ontvangen contactverzoeken</a></li>
+      <li class="tab" data-target="#contact-send"><a href="">Verzonden contactverzoeken</a></li>
+      <li class="tab" data-target="#favourites"><a href="">Favorieten</a></li>
+      <li class="tab" data-target="#chats"><a href="">Mijn chats</a></li>
     </ul>
   </div>
-  <div class="profileForm tab-content">
+  <div class="profileForm tab-content" id="profileForm">
     <h1>Mijn profiel</h1>
     <h3>Vereiste gegevens</h3>
           <%= form_for @profile do |f| %>
