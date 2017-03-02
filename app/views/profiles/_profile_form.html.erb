@@ -11,25 +11,3 @@
     <%= f.submit 'Sla mijn profiel op', style: "width:80%;", class: "button fullred long sharp " %>
   <% end %>
 
-  <div class="profileScore tab-content">
-    <h1>Profielscore: 60% </h1>
-    <div class="teaserCard">
-      <div class="teaserCard_thumb">
-        <%= cl_image_tag @profile.photo, height: 200, width: 200, crop: :fill %>
-      </div>
-      <div class="teaserCard_body">
-        <div class="card_info">
-          <strong><%= @profile.name %></strong>  <br>
-          leeftijd: <%= @profile.age %> <br>
-          woonplaats: <%= @profile.location %> <br>
-          beroep: freelance <br>
-        </div>
-        <div class="teaserCard_description">
-            <%= @profile.description %>
-        </div>
-      </div>
-      <div class="contactBox">
-        <%= link_to "Neem contact op ;-)", new_user_session_path, class: "signupLink" %>
-      </div>
-    </div>
-  </div>
