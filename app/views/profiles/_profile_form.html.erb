@@ -1,13 +1,14 @@
-<h1>Mijn profiel</h1>
-<h3>Vereiste gegevens</h3>
-      <%= form_for @profile do |f| %>
+<div class="profileForm">
+  <h1>Mijn profiel</h1>
+  <h3>Vereiste gegevens</h3>
+        <%= form_for @profile do |f| %>
 
-    <%= f.text_field :name, class: "homeFormField", placeholder: "Naam" %>
-    <%= f.text_field :age, class: "homeFormField", placeholder: "Leeftijd"  %>
-    <%= f.text_field :location, class: "homeFormField", placeholder: "Woonplaats"  %>
-    <%= f.file_field  :photo, class: "homeFormField", placeholder: "Foto"  %>
-    <%= f.hidden_field  :photo_cache %>
+      <%= f.text_field :name, class: "homeFormField", placeholder: "Naam" %>
+      <%= f.text_field :age, class: "homeFormField", placeholder: "Leeftijd"  %>
+      <%= f.text_field :location, class: "homeFormField", placeholder: "Woonplaats"  %>
+      <%= f.file_field  :photo, class: "homeFormField", placeholder: "Foto"  %>
+      <%= f.hidden_field  :photo_cache %>
 
-    <%= f.submit 'Sla mijn profiel op', style: "width:80%;", class: "button fullred long sharp " %>
-  <% end %>
-
+      <%= f.submit 'Sla mijn profiel op', style: "width:80%;", class: "button fullred long sharp " %>
+    <% end %>
+</div>
