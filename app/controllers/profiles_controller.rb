@@ -20,7 +20,6 @@ class ProfilesController < ApplicationController
     @profile = Profile.new(profile_params)
     @profile.user = @user
     @profile.save!
-    redirect_to profiles_path
   end
 
   def edit
@@ -28,7 +27,6 @@ class ProfilesController < ApplicationController
 
   def update
     @profile.update(profile_params)
-    redirect_to profile_path(@profile)
   end
 
   def destroy
